@@ -124,3 +124,10 @@ button,
   border: 1px solid #999;
   color: #999;
 }
+.footer-top {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 -4px 10px 0 rgb(119, 119, 39);
+}

@@ -8,9 +8,9 @@ const Card3 = (data:types.Card4_data) => {
       <div className='card-container'>
         <div className="card-body" style={{ background: data.color }}>
           <div className='card-img'>
-            <div className='left_img'><img src={data.left_img}></img></div>
-            <div className='center_img' ><img src={data.center_img}></img></div>
-            <div className='right_img'><img src={data.right_img}></img></div>
+            <div className='left-img'><img src={data.left_img}></img></div>
+            <div className='center-img' ><img src={data.center_img}></img></div>
+            <div className='right-img'><img src={data.right_img}></img></div>
           </div>
         </div>
         <div className="card-info">

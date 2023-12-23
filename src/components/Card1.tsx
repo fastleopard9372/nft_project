@@ -4,6 +4,7 @@ import '../styles/card1.css';
 const Card1 = (data:types.Card1_data) => {
 
   return (
+    <div className='m-2'>
     <div className='card1'>
       <div className='card-container'>
         <div className="card-body">
@@ -54,6 +55,7 @@ const Card1 = (data:types.Card1_data) => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

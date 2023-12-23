@@ -1,7 +1,9 @@
-
+"use client";
 import types from "../../types";
 
 import Carousel from 'react-multi-carousel';
+import ReactPlayer from "react-player";
+
 import 'react-multi-carousel/lib/styles.css';
 import Card1 from "../../components/Card1";
 import Card2 from "../../components/Card2";
@@ -279,23 +281,17 @@ largest NFT marketplace
         </div>
         <div className="card-group">
           <h3 className='title'>Notable Drops</h3>
-          <div className='grid grid-cols-3 gap-10 mt-10 pt-10'>
-          {/* <div
-            style={{
-              paddingBottom: '30px',
-              position: 'relative'
-            }}
-          > */}
-            {/* <Carousel
+          <div style={{paddingBottom: '30px',position: 'relative'}}>
+            <Carousel
               additionalTransfrom={0}
-              arrows
+              arrows={false}
               autoPlaySpeed={3000}
               centerMode={false}
               className=""
-              containerClass="container"
+              containerClass="container-padding-bottom"
               dotListClass=""
               draggable
-              focusOnSelect={false}
+              focusOnSelect
               infinite
               itemClass=""
               keyBoardControl
@@ -303,28 +299,31 @@ largest NFT marketplace
               pauseOnHover
               renderArrowsWhenDisabled={false}
               renderButtonGroupOutside={false}
-              renderDotsOutside
+              renderDotsOutside={true}
               responsive={{
                 desktop: {
                   breakpoint: {
                     max: 3000,
                     min: 1024
                   },
-                  items: 1
+                  items: 3,
+                  partialVisibilityGutter: 40
                 },
                 mobile: {
                   breakpoint: {
                     max: 464,
                     min: 0
                   },
-                  items: 1
+                  items: 1,
+                  partialVisibilityGutter: 30
                 },
                 tablet: {
                   breakpoint: {
                     max: 1024,
                     min: 464
                   },
-                  items: 1
+                  items: 2,
+                  partialVisibilityGutter: 30
                 }
               }}
               rewind={false}
@@ -336,12 +335,11 @@ largest NFT marketplace
               slidesToSlide={1}
               swipeable
             >
-             
-            </Carousel> */}
-             {
-              card1_data.map((value, index) => <Card1 {...value} />)
-             }
-          </div> 
+              {
+                card1_data.map((value, index) => <Card1 {...value} />)
+              }
+            </Carousel>
+          </div>
         </div>
       </div>
       <div className='section section3'>
@@ -368,12 +366,64 @@ largest NFT marketplace
             <span>Trending in</span>
             <span className='sub-title flex'><span className='mr-2'>all categories </span><img src="./item/down-arrow.svg"></img></span>
           </div>
-          <div className='grid grid-cols-3 gap-5 mt-10'>
-            {
-              card2_data.map((value, index) => (
-                <Card2 {...value} />   
-              ))
-            }
+          <div style={{paddingBottom: '30px',position: 'relative'}}>
+            <Carousel
+              additionalTransfrom={0}
+              arrows={false}
+              autoPlaySpeed={3000}
+              centerMode={false}
+              className=""
+              containerClass="container-padding-bottom"
+              dotListClass=""
+              draggable
+              focusOnSelect
+              infinite
+              itemClass=""
+              keyBoardControl
+              minimumTouchDrag={80}
+              pauseOnHover
+              renderArrowsWhenDisabled={false}
+              renderButtonGroupOutside={false}
+              renderDotsOutside={true}
+              responsive={{
+                desktop: {
+                  breakpoint: {
+                    max: 3000,
+                    min: 1024
+                  },
+                  items: 3,
+                  partialVisibilityGutter: 40
+                },
+                mobile: {
+                  breakpoint: {
+                    max: 464,
+                    min: 0
+                  },
+                  items: 1,
+                  partialVisibilityGutter: 30
+                },
+                tablet: {
+                  breakpoint: {
+                    max: 1024,
+                    min: 464
+                  },
+                  items: 2,
+                  partialVisibilityGutter: 30
+                }
+              }}
+              rewind={false}
+              rewindWithAnimation={false}
+              rtl={false}
+              shouldResetAutoplay
+              showDots
+              sliderClass=""
+              slidesToSlide={1}
+              swipeable
+            >
+              {
+                card2_data.map((value, index) => <Card2 {...value} />)
+              }
+            </Carousel>
           </div>
         </div>     
       </div>
@@ -397,12 +447,31 @@ largest NFT marketplace
           <div className='title flex justify-center'>
             <span>Create and sell your NFTs</span>
           </div>
-          <div className='grid grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-3 gap-5 mt-10 '>
             {
               card4_data.map((value, index) => (
                 <Card4 {...value} />   
               ))
             }
+          </div>
+        </div>     
+      </div>
+      <div className='section section7'>
+        <div className='card-group'>
+          <div className='title flex justify-center' style={{marginBottom:'10px'}}>
+            <span>Meet CompanyName</span>
+          </div>
+          <div className='title-sub flex justify-center'>
+            <span>The NFT marketplace with everything for everyone</span>
+          </div>
+          <div className='flex justify-center flex-col items-center p-20'>
+            <img src="/image 3.png"  style={{cursor:"pointer"}}/>
+            {/* <ReactPlayer  width="800px" 
+       height="600px"/> */}
+            <p className="normal">Fiat on-ramp and profile customization is coming soon.</p>
+          </div>
+          <div className=' flex justify-center mb-10'>
+            <div className='button primary' style={{width:'274px !important;'}}>Explore the marketplace</div>
           </div>
         </div>     
       </div>
