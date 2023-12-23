@@ -1,0 +1,36 @@
+.card4 .card-container {
+  border: none;
+  box-shadow: none;
+  padding: 5px;
+}
+.card4 .card-info {
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid #2081e2;
+  background: var(--White, #0a1020);
+}
+.card4 .card-title {
+  color: var(--Black, #fff);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card4 .card-body {
+  border-radius: 20px 20px 0px 0px;
+}
+.card4 .card-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 30px;
+}
+.card4 .left-img img {
+  margin-right: -12px;
+}
+.card4.center-img img {
+}
+.card4 .right-img img {
+  margin-right: -12px;
+}
