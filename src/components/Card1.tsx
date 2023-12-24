@@ -50,7 +50,7 @@ const Card1 = (data:types.Card1_data) => {
           <h3 className='card-history'>View History</h3>
           <div className='card-button'>
             <div className='button'>
-              <img src="/card1/vector.svg" />
+              <img src="/card1/arrow-1.png" />
               <p className='pt-1 pl-2'>Place Bid</p>
             </div>
           </div>
