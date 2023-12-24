@@ -88,6 +88,25 @@ body {
 main {
   width: 100%;
 }
+.section {
+  margin: auto;
+  width: 80% !important;
+}
+@media (min-width: 1366px) {
+  .section {
+    width: 1280px !important;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    width: 1366px !important;
+  }
+}
+@media (min-width: 1690px) {
+  .section {
+    width: 1440px !important;
+  }
+}
 .header {
   height: 100px;
   width: 100%;

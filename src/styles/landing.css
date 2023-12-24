@@ -107,10 +107,6 @@
 .card-section .card-data {
   flex-grow: 1;
 }
-.section {
-  margin: auto;
-  width: 80% !important;
-}
 
 .section-top-rect {
   margin: auto;
