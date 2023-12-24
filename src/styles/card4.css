@@ -10,7 +10,7 @@
   background: var(--White, #0a1020);
 }
 .card4 .card-title {
-  color: var(--Black, #fff);
+  color: var(--Black, #fff) !important;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;

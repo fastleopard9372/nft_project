@@ -11,7 +11,7 @@
   font-family: Poppins;
 }
 .card3 .card-title {
-  color: var(--Black, #fff);
+  color: var(--Black, #fff) !important;
   font-family: Poppins;
   font-size: 22px;
   font-style: normal;

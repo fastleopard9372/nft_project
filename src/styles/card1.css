@@ -9,6 +9,11 @@
 .card1 .card-img {
   position: relative;
 }
+@media (min-width: 1440px) {
+  .card1 .card-img img {
+    width: 100%;
+  }
+}
 .card1 .section-top-rect img {
   position: absolute;
   top: 0px;
@@ -37,6 +42,7 @@
   font-size: 20px;
   font-weight: 500;
   margin-top: 15px;
+  color: #fff !important;
 }
 .card1 .card-avatar-group {
   position: relative;

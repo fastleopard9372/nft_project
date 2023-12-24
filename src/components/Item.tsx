@@ -4,7 +4,7 @@ import '../styles/item.css';
 const Item = (data:types.Item_data) => {
 
   return (
-    <div className='item space-x-4'>
+    <div className='item space-x-1'>
       <div className='sub-item1'>
         <p>1</p>
       </div>
@@ -14,7 +14,7 @@ const Item = (data:types.Item_data) => {
       </div>
       <div className='sub-item3'>
         <p className='text1'>{data.title}</p>
-        <p className='text2 space-x-4'>
+        <p className='text2 space-x-1'>
           <span>Floor price:</span>
           <img src="/item/domond.svg"></img>
           <span>{ data.price}</span>
@@ -22,7 +22,7 @@ const Item = (data:types.Item_data) => {
       </div>
       <div className='sub-item4'>
         <p className='text1 green'>+{ data.percent}%</p>
-        <p className='text2 space-x-4'>
+        <p className='text2 space-x-1'>
           <img src="/item/domond.svg"></img>
           <span>{ data.count}</span>
         </p>

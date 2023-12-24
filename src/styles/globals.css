@@ -81,7 +81,7 @@ img {
   margin: auto;
 }
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
   background: var(--primary);
   font-family: "Poppins";
   font-size: 17px;

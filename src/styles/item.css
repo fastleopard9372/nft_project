@@ -3,7 +3,7 @@
 }
 .item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-family: Poppins;
   font-size: 14px;

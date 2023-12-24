@@ -8,6 +8,11 @@
 .card2 .card-img img {
   border-radius: 15px;
 }
+@media (min-width: 1440px) {
+  .card2 .card-img img {
+    width: 100%;
+  }
+}
 .card2 .card-username {
   color: var(--Black, #fff);
   font-size: 18px;
