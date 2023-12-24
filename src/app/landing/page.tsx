@@ -1,17 +1,17 @@
 "use client";
-import types from "../../types";
+import types from "@/types";
 
 import Carousel from 'react-multi-carousel';
 import ReactPlayer from "react-player";
 
 import 'react-multi-carousel/lib/styles.css';
-import Card1 from "../../components/Card1";
-import Card2 from "../../components/Card2";
-import Card3 from "../../components/Card3";
-import Card4 from "../../components/Card4";
-import Item from "../../components/Item";
+import Card1 from "@/components/Card1";
+import Card2 from "@/components/Card2";
+import Card3 from "@/components/Card3";
+import Card4 from "@/components/Card4";
+import Item from "@/components/Item";
 
-import '../../styles/landing.css';
+import '@/styles/landing.css';
 
 const Landing = () => {
   const item_data: types.Item_data[] = [{
@@ -225,19 +225,19 @@ const Landing = () => {
         <div className='back'>
         </div>
         <div className='section front flex justify-between items-center'>
-          <div className='text-section flex flex-col justify-center'>
-            <p className='text-6xl mb-7'>
+          <div className='text-section flex flex-col justify-center items-start'>
+            <p className='text-5xl mb-7'>
               <span className='p1'>Discover,</span>
-              <span>collect and sell<br /> extraorddinary</span>
+              <span> collect and sell<br /> extraorddinary</span>
               <span className='p2'> NFTs</span>
             </p>
             <p className='gray-text  mb-7'>
               OpenSea is the world's first and <br />
               largest NFT marketplace
             </p>
-            <div className='form-control flex  mb-7'>
-              <button className='button primary mr-5'>Explore</button>
-              <button className='button default'>Create</button>
+            <div className='form-control justify-center items-start flex-row  mb-7 space-x-4'>
+              <button className="btn btn-primary">Explore</button>
+              <button className="btn btn-outline btn-disabled">Create</button>
             </div>
             <div className='flex'>
               <div className='icon'>

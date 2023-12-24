@@ -76,25 +76,25 @@ const Footer = () => {
   }]
   return (
     <>
-      <div className='footer section1 flex justify-center items-center'>
-        <div className='footer-top'>
+      <div className='mfooter section1 flex justify-center items-center'>
+        <div className='mfooter-top'>
         </div>
         <div className='back'>
         </div>
         <div className='section front flex flex-col items-center'>
           <div className='top flex justify-between w-full'>
             <div className="flex flex-col justify-start">
-              <h3 className='footer-title'>
+              <h3 className='mfooter-title'>
                 Stay in the loop
               </h3>
-              <span className='footer-content'>Join our mailing list to stay in the loop with our newest feature releases,NFT drops, and tips and tricks for navigating OpenSea.</span>
-              <div className='footer-action flex space-x-4'>
+              <span className='mfooter-content'>Join our mailing list to stay in the loop with our newest feature releases,NFT drops, and tips and tricks for navigating OpenSea.</span>
+              <div className='mfooter-action flex space-x-4'>
                 <input type="text" className='subscribe' placeholder='Your email address' />
-                <button type="button" className="button primary">Sign up</button>
+                <button type="button" className="btn btn-primary">Sign up</button>
               </div>
             </div>
-            <div className="flex flex-col justify-end">
-              <h3 className='footer-title-1'>Join the community</h3>
+            <div className="flex flex-col justify-start">
+              <h3 className='mfooter-title-1'>Join the community</h3>
               <div className='flex space-x-4'>
                 <img src="link-icon.svg" />
                 <img src="link-icon.svg" />

@@ -22,9 +22,9 @@
   top: 0px;
   width: 100%;
 }
-.button {
+/* .button {
   width: 116px !important;
-}
+} */
 .card1 .card-time {
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
   bottom: 15px;
   z-index: 100;
 }
-.card1 .card-time p {
+.card1 .card-time > span {
   border-radius: 5px;
   background: var(--Primary, #404be3);
   padding: 5px 10px;
@@ -46,6 +46,9 @@
   font-weight: 500;
   margin-top: 15px;
   color: #fff !important;
+}
+.card1 .card-body {
+  padding: 0;
 }
 .card1 .card-avatar-group {
   position: relative;

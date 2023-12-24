@@ -1,8 +1,16 @@
 
+// https://daisyui.com/components/avatar/
+export interface Wallet_connect { 
+  _id: string,
+  url:string,
+  link:string,
+  title:string,
+  content:string
+}
 export interface Item_data { 
   _id ?: string ,
   no: string, 
-  price:any, 
+  price:any,  
   percent: any,
   title:string,
   count: any,

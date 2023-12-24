@@ -7,6 +7,11 @@ const config: Config = {
     // './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}'
   ],
+  safelist: [
+    {
+      pattern: /grid-cols-./,
+    }
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,7 +20,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-     colors: {
+    colors: {
       'primary': '#151531',
       'secondary': '#421A92',
       'primary1': '#404BE3',
@@ -29,6 +34,26 @@ const config: Config = {
       'gray-light': '#d3dce6',
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [{
+      night: {
+        ...require("daisyui/src/theming/themes")["night"],
+        primary: "404BE3",
+        secondary: "#999",
+        'base-100': "#0a1020",
+        "neutral":"#161c2b",
+        "--border-btn": "2px",
+        },
+    },
+      "light",],
+    darkTheme: "night", // name of one of the included themes for dark mode
+    base: true, // applies background color and foreground color for root element by default
+    styled: true, // include daisyUI colors and design decisions for all components
+    utils: true, // adds responsive and modifier utility classes
+    prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
+    logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
+    themeRoot: ":root", // The element that receives theme color CSS variables
+  },
 }
 export default config

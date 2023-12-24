@@ -1,7 +1,7 @@
 import React from 'react'
-import types from '../types';
-import '../styles/item.css';
-const Item = (data:types.Item_data) => {
+import types from '@/types'
+import '@/styles/item.css';
+const Item = (data: types.Item_data) => {
 
   return (
     <div className='item space-x-1'>
@@ -17,14 +17,14 @@ const Item = (data:types.Item_data) => {
         <p className='text2 space-x-1'>
           <span>Floor price:</span>
           <img src="/item/domond.svg"></img>
-          <span>{ data.price}</span>
+          <span>{data.price}</span>
         </p>
       </div>
       <div className='sub-item4'>
-        <p className='text1 green'>+{ data.percent}%</p>
+        <p className='text1 green'>+{data.percent}%</p>
         <p className='text2 space-x-1'>
           <img src="/item/domond.svg"></img>
-          <span>{ data.count}</span>
+          <span>{data.count}</span>
         </p>
       </div>
     </div>

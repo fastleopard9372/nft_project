@@ -1,8 +1,8 @@
 import React from 'react'
-import types from '../types';
-import '../styles/card3.css';
+import types from '@/types'
+import '@/styles/card3.css';
 
-const Card3 = (data:types.Card3_data) => {
+const Card3 = (data: types.Card3_data) => {
   return (
     <div className='card3'>
       <div className='card-container'>
@@ -12,7 +12,7 @@ const Card3 = (data:types.Card3_data) => {
           </div>
         </div>
         <div className="card-info">
-           <a href={data.link}><p className='card-title'>{ data.title}</p></a>
+          <a href={data.link}><p className='card-title'>{data.title}</p></a>
           <p className='card-content'>
             {data.content}
           </p>

@@ -1,8 +1,8 @@
 import React from 'react'
-import types from '../types';
-import '../styles/card4.css';
+import types from '@/types'
+import '@/styles/card4.css';
 
-const Card3 = (data:types.Card4_data) => {
+const Card3 = (data: types.Card4_data) => {
   return (
     <div className='card4'>
       <div className='card-container'>
@@ -14,7 +14,7 @@ const Card3 = (data:types.Card4_data) => {
           </div>
         </div>
         <div className="card-info">
-          <p className='card-title'>{ data.title}</p>
+          <p className='card-title'>{data.title}</p>
         </div>
       </div>
     </div>
