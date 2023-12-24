@@ -138,20 +138,23 @@ const Landing = () => {
     content: 'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.'
   }];
   const card3_data: types.Card3_data[] = [{
+    link:"/",
     url: "/card3/Group 69.png",
     title: "Set up your wallet",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
   }, {
-    _id:'2',
+    _id: '2',
+    link:"/",
     url: "/card3/Group 76.png",
     title: "Add Your NFT’s",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
     }, {
+    link:"/",
     _id:'3',
     url: "/card3/Group 77.png",
     title: "Sell Your NFT’s",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
-    }];
+  }];
   const card4_data: types.Card4_data[] = [{
     _id: '1',
     left_img: '/card4/Rectangle 35.png',
@@ -351,7 +354,7 @@ largest NFT marketplace
           <div className='grid grid-cols-3 gap-5 mt-10'>
             {
               item_data.map((value, index) => (
-                <Item {...value} />   
+                <Item {...value} key={index}/>   
               ))
             }
           </div>
@@ -421,7 +424,7 @@ largest NFT marketplace
               swipeable
             >
               {
-                card2_data.map((value, index) => <Card2 {...value} />)
+                card2_data.map((value, index) => <Card2 {...value}  key={index}/>)
               }
             </Carousel>
           </div>
@@ -435,7 +438,7 @@ largest NFT marketplace
           <div className='grid grid-cols-3 gap-5 mt-10'>
             {
               card3_data.map((value, index) => (
-                <Card3 {...value} />   
+                <Card3 {...value}   key={index}/>   
               ))
             }
           </div>
@@ -450,7 +453,7 @@ largest NFT marketplace
           <div className='grid grid-cols-3 gap-5 mt-10 '>
             {
               card4_data.map((value, index) => (
-                <Card4 {...value} />   
+                <Card4 {...value}  key={index}/>   
               ))
             }
           </div>

@@ -8,11 +8,11 @@ const Card3 = (data:types.Card3_data) => {
       <div className='card-container'>
         <div className="card-body">
           <div className='card-img'>
-            <img src={data.url}></img>
+            <a href={data.link}><img src={data.url}></img></a>
           </div>
         </div>
         <div className="card-info">
-          <p className='card-title'>{ data.title}</p>
+           <a href={data.link}><p className='card-title'>{ data.title}</p></a>
           <p className='card-content'>
             {data.content}
           </p>

@@ -30,12 +30,12 @@ export interface Card2_data {
   by:string, 
   content:string 
 }
-
 export interface Card3_data { 
   _id?:string,
-   url:string, 
-   title:string, 
-   content:string 
+  url:string, 
+  title:string, 
+  content: string,
+  link:string
 }
 export interface Card4_data { 
   _id?:string,
