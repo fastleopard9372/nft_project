@@ -46,7 +46,7 @@ const wc_data: Wallet_connect[] = [{
 }]
 const Connect_wallet = (data: type.Wallet_connect) => {
   return (
-    <div className='section pt-28 pb-28'>
+    <div className='section pt-20 pb-20'>
       <div className='flex justify-center items-center flex-wrap'>
         {
           wc_data.map((value, index) => (

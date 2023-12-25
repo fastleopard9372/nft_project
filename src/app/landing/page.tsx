@@ -237,7 +237,7 @@ const Landing = () => {
             </p>
             <div className='form-control justify-center items-start flex-row  mb-7 space-x-4'>
               <button className="btn btn-primary">Explore</button>
-              <button className="btn btn-outline btn-disabled">Create</button>
+              <button className="btn btn-outline">Create</button>
             </div>
             <div className='flex'>
               <div className='icon'>
