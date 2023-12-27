@@ -7,9 +7,9 @@ import Image from 'next/image';
 import { HtmlContext } from 'next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints';
 const navigation = [
   { name: 'Explorer', href: '/', active: 'false' },
-  { name: 'State', href: '/state', active: '' },
+  { name: 'State', href: '#', active: '' },
   { name: 'Creators', href: '/creators', active: '' },
-  { name: 'Contact', href: '/contact', active: '' },
+  { name: 'Contact', href: '#', active: '' },
 ]
 
 const Header = () => {
