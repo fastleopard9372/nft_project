@@ -119,7 +119,13 @@ main {
 }
 .section {
   margin: auto;
-  width: 80% !important;
+  width: 100% !important;
+  @apply px-10;
+}
+@media (min-width: 1024px) {
+  .section {
+    width: 1000px !important;
+  }
 }
 @media (min-width: 1280px) {
   .section {
@@ -189,7 +195,7 @@ button,
 }
 .mfooter-title-1 {
   color: var(--Primary, #404be3);
-  text-align: right;
+  text-align: left;
   font-size: 25px;
   font-weight: 500;
   margin-top: 40px;
@@ -250,10 +256,10 @@ button,
   opacity: 0.2;
   margin: 30px 0;
 }
-.mfooter .top > div {
+/* .mfooter .top > div {
   min-width: 400px;
   max-width: 600px;
-}
+} */
 .bottom-banner {
   position: relative;
   background: var(--Primary, #404be3);
@@ -263,7 +269,7 @@ button,
   font-weight: 400;
 }
 .bottom-banner .section {
-  height: 100%;
+  height: 100% !important;
 }
 .bottom-banner .section span {
   opacity: 0.5;
@@ -273,7 +279,7 @@ button,
 .section1 {
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 100%;
 }
 .section1 .back {
   position: absolute;
@@ -285,14 +291,7 @@ button,
   filter: blur(25px);
   opacity: 0.2;
 }
-.section1 .front {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  font-weight: 700;
-  /* box-shadow: 0 4px 10px 0px #000; */
-}
+
 .link ul li {
   margin-right: 2em;
   color: #999;
