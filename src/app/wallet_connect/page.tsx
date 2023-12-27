@@ -1,7 +1,7 @@
 import React from 'react'
 import Wallet_card from '@/components/Wallet_card'
-import type, { Wallet_connect } from "@/types";
-const wc_data: Wallet_connect[] = [{
+import types from "@/types";
+const wc_data: types.Wallet_connect[] = [{
   _id: "0",
   link: "link",
   url: '/wallet_connect/image 5.png',
