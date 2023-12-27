@@ -1,6 +1,7 @@
 import React from 'react'
 import Wallet_card from '@/components/Wallet_card'
 import types from '@/types'
+
 const wc_data: types.Wallet_connect[] = [{
   _id: "0",
   link: "#",
