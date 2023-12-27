@@ -26,6 +26,7 @@ const Wallet_card = (data: types.Wallet_connect) => {
 
   const connectWallet = async () => {
 
+    console.log(window.litescribe);
     try {
       let accounts = await window.litescribe.requestAccounts();
 
@@ -112,13 +113,7 @@ const Wallet_card = (data: types.Wallet_connect) => {
     } else if (title === 'Xverse') {
       connectXverse();
     }
-    /*
-    https://www.xverse.app/download
-https://leather.io/
-https://unisat.io/
-https://litescribe.io/
-https://phantom.app/
-    */
+
   }
   return (
     <div className='p-2 w-1/4 pb-6' onClick={() => handleClick(data.title, data.link)}>

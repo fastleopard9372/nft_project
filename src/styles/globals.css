@@ -104,6 +104,10 @@ main {
 .btn-sm {
   @apply rounded-[4px];
 }
+.btn-circle {
+  @apply rounded-full;
+  @apply px-0;
+}
 .select-sm {
   @apply rounded-[4px];
 }
