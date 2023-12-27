@@ -17,7 +17,7 @@
 }
 
 .card-section {
-  border-radius: 25px;
+  border-radius: 18px;
   border: 5px solid rgba(0, 0, 0, 0.2);
 }
 .card-section .card-img {
@@ -41,12 +41,12 @@
   height: 21px;
   background-color: #404be3;
 }
-.avatar {
+/* .avatar {
   border-radius: 50%;
   width: 52px;
   height: 52px;
   border: 1px solid #0a1020;
-}
+} */
 .info-img {
   width: 20px;
   height: 20px;

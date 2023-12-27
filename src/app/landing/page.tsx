@@ -255,8 +255,10 @@ const Landing = () => {
               <img src='/card.png'></img>
             </div>
             <div className='info flex items-center p-5'>
-              <div className='avatar'>
-                <img src='/avatar.png'></img>
+              <div className="avatar ">
+                <div className="w-12 rounded-full border  border-neutral">
+                  <img src='/avatar.png'></img>
+                </div>
               </div>
               <div className='card-data'>
                 <p>text</p>

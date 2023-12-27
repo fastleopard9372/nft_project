@@ -53,5 +53,11 @@ export interface Card4_data {
   title: string 
   color: string;
 }
-
-
+export interface User_data { 
+  _id?:string,
+  name:string, 
+  avatar:string, 
+  email:string, 
+  followers: number 
+  link: string;
+}

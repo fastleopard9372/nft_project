@@ -4,7 +4,7 @@ import types from '@/types'
 const Card2 = (data: types.Card2_data) => {
   return (
     <div className='m-2'>
-      <div className='card bg-neutral cursor-pointer border-gray border border-primary' >
+      <div className='card bg-neutral cursor-pointer border border-primary' >
         <div className='card-body p-4'>
           <div className='card-img'>
             <img src={data.background}></img>
