@@ -10,8 +10,8 @@ const wc_data: Wallet_connect[] = [{
 }, {
   _id: "1",
   link: "#",
-  url: '/wallet_connect/connect-ordinals-wallet.png',
-  title: "Ordinals",
+  url: '/wallet_connect/connect-lite.png',
+  title: "LiteScrive",
   content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem."
 }, {
   _id: "2",
@@ -32,7 +32,7 @@ const wc_data: Wallet_connect[] = [{
   title: "Xverse",
   content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem."
 }]
-const Connect_wallet = (data: type.Wallet_connect) => {
+const Connect_wallet = () => {
   return (
     <div className='section pt-20 pb-20'>
       <div className='flex justify-center items-center flex-wrap space-x-7'>

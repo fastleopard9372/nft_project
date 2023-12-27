@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, MouseEvent } from 'react'
-import Carousel from 'react-elastic-carousel'
+import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel'
 import classNames from 'classnames';
 import Style_item from '@/components/Style_item';
 import Card1 from '@/components/Card1';
@@ -116,16 +116,19 @@ const card1_data: types.Card1_data[] = [{
   name: "Fuliani",
   value: 76.4
 }]
-const item_config = {
-  itemsToScroll: 1,
-  itemsToShow: 4,
-  showArrows: false,
-  pagination: false,
-  verticalMode: true
-}
 
 const Product_page = () => {
   var carousel: any = null;
+  const item_config = {
+    itemsToScroll: 1,
+    itemsToShow: 4,
+    showArrows: false,
+    pagination: false,
+    verticalMode: true,
+    isRTL: false,
+    ref: carousel
+  }
+  // ref = { ref => { carousel = ref; return carousel; }}
   const [innerBtn, setInerBtn] = useState<string>('details');
   const [viewBtn, setViewBtn] = useState<string>('all');
   const handleInnerClick = (name: string) => {
@@ -146,10 +149,7 @@ const Product_page = () => {
                   className='btn btn-sm w-9 absolute z-50 top-3.5 left-1' style={{ padding: '0 !important', opacity: 0.8 }}>
                   <img src='/product_data/arrow-up.svg'></img>
                 </button>
-                <Carousel {...item_config} ref={ref => {
-                  carousel = ref;
-                  return carousel;
-                }}>
+                <Carousel {...item_config}>
                   {items.map((item, index) =>
                     <Style_item key={index}>
                       <img src={item.url} className='w-full h-full' />
