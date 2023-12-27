@@ -1,8 +1,9 @@
+"use client";
 import React from 'react'
 import types from '@/types'
 const Wallet_card = (data: types.Wallet_connect) => {
   const handleClick = (title: string, link: string) => {
-    console.log(link);
+    console.log(title);
   }
   return (
     <div className='p-2 w-1/4 pb-6' onClick={() => handleClick(data.title, data.link)}>
