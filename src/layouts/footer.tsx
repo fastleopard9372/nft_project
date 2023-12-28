@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div className='back'>
         </div>
-        <div className='section front flex flex-col items-center'>
+        <div className='section front flex flex-col items-center z-50'>
           <div className='top flex justify-between w-full flex-col lg:flex-row'>
             <div className="flex flex-col justify-start w-full">
               <h3 className='mfooter-title'>
