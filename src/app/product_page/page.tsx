@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, MouseEvent } from 'react'
-// import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel'
+import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel'
 import classNames from 'classnames';
 import Style_item from '@/components/Style_item';
 import Card1 from '@/components/Card1';
 import types from '@/types'
+import Description from '@/components/Description';
+
 import '@/styles/globals.css';
 const items = [
   { id: 1, url: '/product_data/image (1).png' },
@@ -129,11 +131,8 @@ const Product_page = () => {
     ref: carousel
   }
   // ref = { ref => { carousel = ref; return carousel; }}
-  const [innerBtn, setInerBtn] = useState<string>('details');
   const [viewBtn, setViewBtn] = useState<string>('all');
-  const handleInnerClick = (name: string) => {
-    setInerBtn(name);
-  }
+
   const handleViewClick = (name: string) => {
     setViewBtn(name);
   }
@@ -149,13 +148,13 @@ const Product_page = () => {
                   className='btn btn-sm w-9 absolute z-50 top-3.5 left-1' style={{ padding: '0 !important', opacity: 0.8 }}>
                   <img src='/product_data/arrow-up.svg'></img>
                 </button>
-                {/* <Carousel {...item_config}>
+                <Carousel {...item_config}>
                   {items.map((item, index) =>
                     <Style_item key={index}>
                       <img src={item.url} className='w-full h-full' />
                     </Style_item>
                   )}
-                </Carousel> */}
+                </Carousel>
                 <button type='button'
                   onClick={() => carousel.slideNext()}
                   className='btn btn-sm w-9 absolute bottom-3.5 left-1 z-50' style={{ padding: '0 !important', opacity: 0.8 }}>
@@ -248,23 +247,7 @@ const Product_page = () => {
               </div>
             </div>
             <div className='grid grid-cols-1'>
-              <div className='flex justify-between items-center gap-4'>
-                <button className={`btn btn-sm ${innerBtn === 'details' ? 'btn-primary' : 'btn-outline'}`} onClick={() => handleInnerClick('detail')}>Details</button>
-                <button className={`btn btn-sm ${innerBtn === 'bids' ? 'btn-primary' : 'btn-outline'}`} onClick={() => handleInnerClick('bids')}>Bids</button>
-                <button className={`btn btn-sm ${innerBtn === 'history' ? 'btn-primary' : 'btn-outline'}`} onClick={() => handleInnerClick('history')}>History</button>
-                <div className='grow'></div>
-                <select className="select select-bordered select-sm">
-                  <option>Recent Active</option>
-                  <option>Recent Active</option>
-                  <option>Recent Active</option>
-                  <option>Recent Active</option>
-                </select>
-              </div>
-              <div className="divider"></div>
-              <div className='opacity-50 text-[16px] font-extralight'>
-                Hey guys! New exploration about NFT Marketplace Web Design, this time I'm inspired by one of my favorite NFT website called Company
-                Name (with crypto payment)! What do you think?
-              </div>
+              <Description />
             </div>
           </div>
           <div className='grid grid-cols-1'>
