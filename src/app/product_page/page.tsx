@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, MouseEvent } from 'react'
-// import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel'
+import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel'
 import classNames from 'classnames';
 import Style_item from '@/components/Style_item';
 import Card1 from '@/components/Card1';
@@ -148,13 +148,13 @@ const Product_page = () => {
                   className='btn btn-sm w-9 absolute z-50 top-3.5 left-1' style={{ padding: '0 !important', opacity: 0.8 }}>
                   <img src='/product_data/arrow-up.svg'></img>
                 </button>
-                {/* <Carousel {...item_config}>
+                <Carousel {...item_config}>
                   {items.map((item, index) =>
                     <Style_item key={index}>
                       <img src={item.url} className='w-full h-full' />
                     </Style_item>
                   )}
-                </Carousel> */}
+                </Carousel>
                 <button type='button'
                   onClick={() => carousel.slideNext()}
                   className='btn btn-sm w-9 absolute bottom-3.5 left-1 z-50' style={{ padding: '0 !important', opacity: 0.8 }}>
@@ -167,7 +167,7 @@ const Product_page = () => {
                     <img src='/product_data/image (3).png' className='w-full' />
                   </div>
                   <div className='col-span-3 font-medium'>
-                    <div className='text-5xl pb-4'>Creative ProductName</div>
+                    <div className='text-4xl pb-4'>Creative ProductName</div>
                     <div className='text-2xl flex space-x-2  pb-4 opacity-50'>
                       <span>Code: </span>
                       <span>#51512322223221215</span>
@@ -187,7 +187,7 @@ const Product_page = () => {
                         <img src='/product_data/upload.svg' />
                       </div>
                     </div>
-                    <div className='flex space-x-2 text-[40px] pt-8'>
+                    <div className='flex space-x-2 text-[36px] pt-8'>
                       <span className='text-primary'>8.4590</span>
                       <span className='opacity-50'> ETH/ $5479.88</span>
                     </div>
