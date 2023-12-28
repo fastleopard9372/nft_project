@@ -85,8 +85,8 @@ const Profile = () => {
 
   return (
     <div className='section'>
-      <div className='card'>
-        <div className='card-body'>
+      <div className='card px-0'>
+        <div className='card-body px-0'>
           <div className=' pt-10 grid-cols-1 gap-6'>
             <div className='grid grid-cols-4 gap-8'>
               <div className='col-span-1'>

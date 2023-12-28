@@ -120,7 +120,6 @@ main {
 .section {
   margin: auto;
   width: 100% !important;
-  @apply px-10;
 }
 @media (min-width: 1024px) {
   .section {

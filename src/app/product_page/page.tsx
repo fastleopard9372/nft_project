@@ -128,9 +128,12 @@ const Product_page = () => {
     pagination: false,
     verticalMode: true,
     isRTL: false,
-    ref: carousel
+    ref: function (ref: any) {
+      carousel = ref;
+      return carousel;
+    }
   }
-  // ref = { ref => { carousel = ref; return carousel; }}
+
   const [viewBtn, setViewBtn] = useState<string>('all');
 
   const handleViewClick = (name: string) => {
@@ -138,8 +141,8 @@ const Product_page = () => {
   }
   return (
     <div className='section pb-20' style={{ fontFamily: 'Josefin Sans' }}>
-      <div className='card'>
-        <div className='card-body'>
+      <div className='card px-0'>
+        <div className='card-body px-0'>
           <div className=' pt-10 grid grid-cols-2 gap-5 pb-14'>
             <button type='button' className='btn btn-primary btn-sm top-0.5 col-span-2 w-32'>Back to home</button>
             <div className="grid grid-cols-12 gap-5 py-3 col-span-2">
@@ -148,7 +151,7 @@ const Product_page = () => {
                   className='btn btn-sm w-9 absolute z-50 top-3.5 left-1' style={{ padding: '0 !important', opacity: 0.8 }}>
                   <img src='/product_data/arrow-up.svg'></img>
                 </button>
-                <Carousel {...item_config}>
+                <Carousel {...item_config} >
                   {items.map((item, index) =>
                     <Style_item key={index}>
                       <img src={item.url} className='w-full h-full' />
@@ -174,11 +177,11 @@ const Product_page = () => {
                     </div>
                     <div className='text-lg flex items-center space-x-3'>
                       <div className="rating">
-                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
-                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
-                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
-                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" checked />
-                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
+                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary input-sm" />
+                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary input-sm" />
+                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary input-sm" />
+                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary input-sm" checked />
+                        <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary input-sm" />
                       </div>
                       <span className='opacity-50'>332 Review</span>
                       <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
@@ -187,7 +190,7 @@ const Product_page = () => {
                         <img src='/product_data/upload.svg' />
                       </div>
                     </div>
-                    <div className='flex space-x-2 text-[36px] pt-8'>
+                    <div className='flex space-x-2 text-[36px] pt-5'>
                       <span className='text-primary'>8.4590</span>
                       <span className='opacity-50'> ETH/ $5479.88</span>
                     </div>
@@ -215,11 +218,11 @@ const Product_page = () => {
                   </div>
                   <button type='button' className='btn btn-primary py-4'>ADD TO CART</button>
                   <div className='flex justify-start items-center space-x-5 py-4'>
-                    <button type='button' className='btn btn-outline btn-primary btn-lg'>
+                    <button type='button' className='btn btn-outline btn-primary'>
                       <img src='/product_data/like.svg'></img>
                       <span className='text-[20px] font-normal'>Add To Wallet</span>
                     </button>
-                    <button type='button' className='btn btn-outline  btn-primary btn-lg'>
+                    <button type='button' className='btn btn-outline  btn-primary'>
                       <img src='/product_data/home.svg'></img>
                       <span className='text-[20px] font-normal'>Add To Category</span>
                     </button>
