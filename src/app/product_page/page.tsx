@@ -230,7 +230,7 @@ const Product_page = () => {
                       <img src='/product_data/function.svg'></img>
                       <span>Facebook</span>
                     </button>
-                    <button type='button' className='btn btn-light btn-sm' style={{ backgroundColor: '#EEEEEE !important' }}>
+                    <button type='button' className='btn btn-light btn-sm' style={{ backgroundColor: '#EEEEEE !important', color: '#000000' }}>
                       <img src='/product_data/twitter.svg'></img>
                       <span>Twitter</span>
                     </button>
