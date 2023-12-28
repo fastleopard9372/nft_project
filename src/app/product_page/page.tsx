@@ -172,7 +172,7 @@ const Product_page = () => {
                       <span>Code: </span>
                       <span>#51512322223221215</span>
                     </div>
-                    <div className='text-xl flex items-center space-x-3'>
+                    <div className='text-lg flex items-center space-x-3'>
                       <div className="rating">
                         <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
                         <input type="radio" name="rating-1" readOnly className="mask mask-star bg-primary" />
@@ -230,7 +230,7 @@ const Product_page = () => {
                       <img src='/product_data/function.svg'></img>
                       <span>Facebook</span>
                     </button>
-                    <button type='button' className='btn btn-light btn-sm'>
+                    <button type='button' className='btn btn-light btn-sm' style={{ backgroundColor: '#EEEEEE !important' }}>
                       <img src='/product_data/twitter.svg'></img>
                       <span>Twitter</span>
                     </button>
@@ -250,8 +250,8 @@ const Product_page = () => {
               <Description />
             </div>
           </div>
-          <div className='grid grid-cols-1'>
-            <div className='flex justify-between items-center space-x-3'>
+          <div className='grid grid-cols-1 '>
+            <div className='flex justify-between items-center space-x-3  pr-2'>
               <div>
                 <p className='text-lg'>Exclusive Assets</p>
                 <p className='text-primary text-5xl'>Explore</p>
