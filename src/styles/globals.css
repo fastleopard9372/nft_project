@@ -101,6 +101,9 @@ main {
   @apply rounded-lg;
   @apply px-5;
 }
+.description .btn {
+  @apply px-2;
+}
 .btn-sm {
   @apply rounded-[4px];
 }
