@@ -140,19 +140,19 @@ const Landing = () => {
   const card3_data: types.Card3_data[] = [{
     link: "/",
     url: "/card3/Group 69.png",
-    title: "Set up your wallet",
+    title: "Setup your wallet",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
   }, {
     _id: '2',
     link: "/",
     url: "/card3/Group 76.png",
-    title: "Add Your NFT’s",
+    title: "Add Your Ordinals",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
   }, {
     link: "/",
     _id: '3',
     url: "/card3/Group 77.png",
-    title: "Sell Your NFT’s",
+    title: "Sell Your Ordinals",
     content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.",
   }];
   const card4_data: types.Card4_data[] = [{
@@ -224,33 +224,33 @@ const Landing = () => {
       <div className='section1 flex justify-center items-center h-[650px]'>
         <div className='back'>
         </div>
-        <div className='section front flex justify-between items-center  z-50'>
+        <div className='section front flex justify-between items-center z-50'>
           <div className='text-section flex flex-col justify-center items-start'>
             <p className='text-5xl mb-7'>
               <span className='p1'>Discover,</span>
-              <span> collect and sell<br /> extraorddinary</span>
-              <span className='p2'> NFTs</span>
+              <span> collect and sell<br />Litecoin</span>
+              <span className='p2'> Ordinals</span>
             </p>
             <p className='gray-text  mb-7'>
-              OpenSea is the world's first and <br />
-              largest NFT marketplace
+              LiteVerse is the world's first and <br />
+              largest Litecoin Ordinal marketplace
             </p>
             <div className='form-control justify-center items-start flex-row  mb-7 space-x-4'>
               <button className="btn btn-primary">Explore</button>
               <button className="btn btn-outline">Create</button>
             </div>
-            <div className='flex'>
-              <div className='icon'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13" fill="none">
-                  <path d="M10 6.5L0.249999 12.1292L0.25 0.870834L10 6.5Z" fill="white" />
-                </svg>
-              </div>
-              <span className='text'>
-                Learn more about companyName
-              </span>
-            </div>
+            {/*<div className='flex'>*/}
+            {/*  <div className='icon'>*/}
+            {/*    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13" fill="none">*/}
+            {/*      <path d="M10 6.5L0.249999 12.1292L0.25 0.870834L10 6.5Z" fill="white" />*/}
+            {/*    </svg>*/}
+            {/*  </div>*/}
+            {/*  <span className='text'>*/}
+            {/*    Learn more about LiteVerse*/}
+            {/*  </span>*/}
+            {/*</div>*/}
           </div>
-          <div className='card-section  ml-3'>
+          <div className='card-section  ml-3  max-sm:hidden'>
             <div className='card-img'>
               <img src='/card.png'></img>
             </div>
@@ -350,10 +350,10 @@ const Landing = () => {
       <div className='section section3'>
         <div className='card-group'>
           <div className='title flex justify-center'>
-            <span>Top collections over</span>
-            <span className='sub-title flex'><span className='mr-2'>last 7 days </span><img src="./item/down-arrow.svg"></img></span>
+            <span className=" max-sm:text-2xl">Top Ordinals over</span>
+            <span className=' max-sm:text-xl sub-title flex'><span className='mr-2'>last 7 days </span><img src="./item/down-arrow.svg"></img></span>
           </div>
-          <div className='grid grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-3 gap-5 mt-10 max-lg:grid-cols-2 max-sm:grid-cols-1'>
             {
               item_data.map((value, index) => (
                 <Item {...value} key={index} />
@@ -368,8 +368,8 @@ const Landing = () => {
       <div className='section section4'>
         <div className='card-group'>
           <div className='title flex justify-center'>
-            <span>Trending in</span>
-            <span className='sub-title flex'><span className='mr-2'>all categories </span><img src="./item/down-arrow.svg"></img></span>
+            <span className=" max-sm:text-2xl">Trending in</span>
+            <span className=' max-sm:text-xl sub-title flex'><span className='mr-2'>all categories </span><img src="./item/down-arrow.svg"></img></span>
           </div>
           <div style={{ paddingBottom: '30px', position: 'relative' }}>
             <Carousel
@@ -435,9 +435,9 @@ const Landing = () => {
       <div className='section section5'>
         <div className='card-group'>
           <div className='title flex justify-center'>
-            <span>Create and sell your NFTs</span>
+            <span className=" max-sm:text-2xl">Create and sell your Ordinals</span>
           </div>
-          <div className='grid grid-cols-3 gap-5 mt-10'>
+          <div className='grid grid-cols-3 gap-5 mt-10 max-lg:grid-cols-2 max-sm:grid-cols-1'>
             {
               card3_data.map((value, index) => (
                 <Card3 {...value} key={index} />
@@ -450,9 +450,9 @@ const Landing = () => {
       <div className='section section6'>
         <div className='card-group'>
           <div className='title flex justify-center'>
-            <span>Create and sell your NFTs</span>
+            <span>Create and sell your Ordinals</span>
           </div>
-          <div className='grid grid-cols-3 gap-5 mt-10 '>
+          <div className='grid grid-cols-3 gap-5 mt-10 max-lg:grid-cols-2'>
             {
               card4_data.map((value, index) => (
                 <Card4 {...value} key={index} />
@@ -463,24 +463,22 @@ const Landing = () => {
       </div>
       <div className='section section7'>
         <div className='card-group'>
-          <div className='title flex justify-center' style={{ marginBottom: '10px' }}>
-            <span>Meet CompanyName</span>
-          </div>
-          <div className='title-sub flex justify-center'>
-            <span>The NFT marketplace with everything for everyone</span>
-          </div>
-          <div className='flex justify-center flex-col items-center p-20'>
-            <img src="/image 3.png" style={{ cursor: "pointer" }} />
-            {/* <ReactPlayer  width="800px" 
-       height="600px"/> */}
-            <p className="normal">Fiat on-ramp and profile customization is coming soon.</p>
-          </div>
+          {/*<div className='title flex justify-center' style={{ marginBottom: '10px' }}>*/}
+          {/*  <span>Meet LiteVerse</span>*/}
+          {/*</div>*/}
+          {/*<div className='title-sub flex justify-center'>*/}
+          {/*  <span>The Ordinal marketplace with everything for everyone</span>*/}
+          {/*</div>*/}
+          {/*<div className='flex justify-center flex-col items-center p-20'>*/}
+          {/*<img src="/image 3.png" style={{ cursor: "pointer" }} />*/}
+          {/* <ReactPlayer  width="800px" 
+            height="600px"/> */}
+          {/*</div>*/}
           <div className=' flex justify-center mb-10'>
-            <div className='button primary' style={{ width: '274px !important;' }}>Explore the marketplace</div>
+            {/*<div className='button primary' style={{ width: '274px !important;' }}>Explore the marketplace</div>*/}
           </div>
         </div>
       </div>
-
     </div>
   )
 }

@@ -121,9 +121,14 @@ main {
   margin: auto;
   width: 100% !important;
 }
+@media (max-width: 1023.91px) {
+  .section {
+    width: 90% !important;
+  }
+}
 @media (min-width: 1024px) {
   .section {
-    width: 1000px !important;
+    width: 900px !important;
   }
 }
 @media (min-width: 1280px) {
@@ -153,8 +158,13 @@ main {
   gap: 15px;
 }
 .logo_image {
-  background-color: var(--primary1);
   width: 67px;
+  height: 67px;
+  border-radius: 10px;
+}
+
+.logo_name {
+  width: 200px;
   height: 67px;
   border-radius: 10px;
 }
