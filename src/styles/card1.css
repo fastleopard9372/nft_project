@@ -87,7 +87,7 @@
   border-radius: 10px;
   border: 2px solid var(--Primary, #404be3);
   color: #fff;
-  padding: 0px 10px;
+  padding: 0px 10px; 
 }
 .card1 .button img {
   border-radius: 50%;
