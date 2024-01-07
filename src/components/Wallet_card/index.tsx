@@ -104,7 +104,7 @@ const Wallet_card = (data: types.Wallet_connect) => {
   const handleClick = (title: string, link: string) => {
     if (title === 'Leather') {
       connectLeather();
-    } else if (title === 'LiteScrive') {
+    } else if (title === 'Litescribe') {
       connectWallet();
     } else if (title === 'Phantom') {
 

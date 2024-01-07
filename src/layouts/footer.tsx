@@ -87,8 +87,8 @@ const Footer = () => {
                 Stay in the know
               </h3>
               <span className='mfooter-content'>Join our mailing list to stay in the know with our newest feature releases, Ordinal drops, and tips and tricks for navigating LiteVerse.</span>
-              <div className='mfooter-action flex space-x-4'>
-                <input type="text" className='subscribe' placeholder='Your email address' />
+              <div className='mfooter-action flex space-x-4 space-y-4 max-sm:flex-col'>
+                <input type="text" className='subscribe mt-[16px]  max-sm:ml-[16px]' placeholder='Your email address' />
                 <button type="button" className="btn btn-primary">Subscribe</button>
               </div>
             </div>

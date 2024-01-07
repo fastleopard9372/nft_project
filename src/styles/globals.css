@@ -228,7 +228,7 @@ button,
   background: var(--Black, #555);
   color: #aaa;
   padding: 10px 20px;
-  width: 300px;
+  /* width: 300px; */
   font-size: 16px;
   font-weight: 400;
 }
